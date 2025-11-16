@@ -1,0 +1,63 @@
+/* Colores institucionales INET */
+:root {
+  --inet-azul: #2563eb;
+  --inet-verde: #16a34a;
+  --inet-fondo: #f5f6fa;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--inet-fondo);
+  color: #222;
+  padding-top: 70px;
+}
+
+/* Header */
+.bg-inet {
+  background-color: var(--inet-azul) !important;
+}
+.brand-logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  background: #fff;
+  padding: 4px;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(180deg, #dbeafe 0%, #f5f6fa 100%);
+}
+
+/* Efecto hover general */
+.card-hover {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+}
+
+/* Efecto hover en lista de aportes */
+.aportes-list .list-group-item {
+  transition: background-color 0.25s ease, transform 0.25s ease;
+  cursor: pointer;
+}
+.aportes-list .list-group-item:hover {
+  background-color: #eff6ff;
+  color: var(--inet-azul);
+  transform: translateX(4px);
+}
+
+/* Validación personalizada */
+.was-validated .form-control:valid {
+  border-color: #198754;
+}
+.was-validated .form-control:invalid {
+  border-color: #dc3545;
+}
+
+/* Footer */
+footer {
+  font-size: 0.9rem;
+}
